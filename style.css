@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    position: relative;
+    transition: background-image 1s ease-in-out 0.5s;
+}
+
+.time {
+    font: 6rem Georgia, serif;
+}
+
+h1 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 660px) and (max-width: 1400px) {
+    body {
+        background-size: auto;
+    }
+    .time {
+        font: 2.5rem Georgia, serif;
+    }
+    .btn_img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 660px) {
+    body {
+        background-size: auto;
+    }
+    .time {
+        font: 2rem Georgia, serif;
+    }
+    .btn_img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.btn_img {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    margin: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.btn_img:hover {
+    filter: grayscale(.8);
+}
+
+.btn_img:active,
+.btn_img:focus {
+    outline: 0;
+}
+
+.btn_img:active {
+    transform: scale(1.02)
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    transition: 0.8s;
+    font: 1.2rem Georgia, serif;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.quote {
+    font: 1.2rem Georgia, serif;
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+}
+
+.quote figcaption,
+.quote blockquote {
+    margin: 1em;
+}
+
+.quote figcaption {
+    text-align: right;
+}
+
+.btn {
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    margin: 10px;
+    left: 0;
+    top: 0;
+}
+
+.btn:hover {
+    filter: grayscale(.2);
+}
+
+.btn:active,
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(1.02)
+}
